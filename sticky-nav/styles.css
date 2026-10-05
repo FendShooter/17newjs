@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  height: 100dvh;
+}
+svg,
+img {
+  max-width: 100%;
+  /* ? aspect-ratio: 1/1; */
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+button {
+  font-family: inherit;
+}
+a:link,
+:visited {
+  color: #333;
+}
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 2rem;
+}
+
+nav {
+  border-bottom: 1px solid #d6d5d5;
+}
+ul {
+  display: flex;
+  padding: 1.2rem 1.2rem 0;
+  font-size: 2.6rem;
+}
+li a {
+  display: block;
+}
+
+ul li {
+  padding: 1.5rem 1rem;
+  border: 1px solid #5c5c5c;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 500ms ease-in;
+}
+ul li:hover {
+}
+ul .active {
+  background: teal;
+  color: white;
+}
+
+ul li:hover a {
+  color: black;
+}
+.section {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+section {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+section p {
+  margin-top: 2rem;
+}
+
+.hidden {
+  display: none;
+}

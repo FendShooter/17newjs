@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  height: 100dvh;
+  background-image: url('https://images.pexels.com/photos/39553613/pexels-photo-39553613.jpeg');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+svg,
+img {
+  max-width: 100%;
+  /* ? aspect-ratio: 1/1; */
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+button {
+  font-family: inherit;
+}
+a:link,
+:visited {
+  color: #333;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 60rem;
+  padding: 2rem;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 2rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input[type='number'] {
+  padding: 1.3rem;
+}
+.inputs label {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 500;
+  border: none;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+#stopTimer {
+  background: red;
+  color: white;
+  padding: 0.8rem 4rem;
+}
+.btn-group {
+  margin-top: 4.5rem;
+  display: none;
+}
+.timerDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 5rem;
+  gap: 1rem;
+  width: 100%;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.btn-group:has(button) {
+  display: block;
+}

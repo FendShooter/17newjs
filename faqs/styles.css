@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* list-style: none; */
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  height: 100dvh;
+}
+svg,
+img {
+  max-width: 100%;
+  /* ? aspect-ratio: 1/1; */
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+button {
+  font-family: inherit;
+}
+a:link,
+:visited {
+  color: #333;
+}
+
+details {
+  margin: 2rem;
+  cursor: pointer;
+  padding: 1.5rem;
+  background: teal;
+  color: white;
+}
+
+details summary {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+details p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
